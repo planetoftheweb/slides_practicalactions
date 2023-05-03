@@ -8,7 +8,7 @@
     "serve": "vite preview",
     "start": "npm-run-all --parallel dev:*",
     "dev:eleventy": "eleventy --watch",
-    "dev:vite": "vite",
+    "dev:vite": "vite --host 0.0.0.0",
     "build": "run-s prod:*",
     "prod:del": "rimraf docs",
     "prod:serve": "ELEVENTY_ENV=production eleventy --output=./docs/site",

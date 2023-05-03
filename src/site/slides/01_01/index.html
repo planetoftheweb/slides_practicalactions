@@ -105,6 +105,20 @@
                   </div>
                 
                 
+                  <div class="d-flex justify-content-end align-items-right border-bottom p-2"  style="background-color:#F0C051;">
+                    <a class="text-decoration-none d-flex " href="../01_05/index.html">
+                      <i class="bi bi-file-text-fill me-2 lh-1" style="color: #8C6621;"></i>
+                      <div class="d-flex flex-column lh-1">
+                        <span class="fw-medium lh-1" style="color: #8C6621; font-size: .7em">01_05</span>
+                        <span class="fw-bold lh-1 text-white" style="font-family: Asap; font-size: 1.1em">Crafting a</span>
+                      </div>
+                    </a>
+                    <a class="flex-fill ms-3 text-end" style="color: #8C6621;" href="../../../?d=01_05&#">
+                      <i class="bi bi-collection-play-fill"></i>
+                    </a>
+                  </div>
+                
+                
                 </nav>
           </aside>
         <main class="main col col-md-6 col-lg-8">
@@ -113,7 +127,7 @@
 <blockquote>
 <blockquote></blockquote>
 </blockquote>
-<p>Before we get too far, lets talk about what Github Actions are and how they work.</p>
+<p>Before we get too far, lets talk about what Github Actions are, how they work and how this course is put together.</p>
 <hr>
 <h1 id="github-actions-1" tabindex="-1">GitHub Actions</h1>
 <ul>
@@ -150,6 +164,9 @@
 <li><a href="https://help.apple.com/itc/podcasts_connect/#/itcbaf351599">XML, RSS Feeds</a></li>
 <li><a href="https://yaml.org/">YAML Syntax</a></li>
 </ul>
+<blockquote>
+<blockquote></blockquote>
+</blockquote>
 <p>Probably the best piece of advice I can give you when you're trying to learn something is to solve a problem that you're having.</p>
 <p>So In this course, we're going to be building something I needed for my own work. I recentely launched a podcast and I wanted to create a feed that I could use.</p>
 <p>A podcast feed is a way for podcast apps to find out information about your show and episodes. From a technical standpoint i'ts an XML file in a specific format called RSS.</p>
@@ -158,7 +175,7 @@
 <p>If you take a look at this sample feed, you can see that it's not particularly fun to write manually.</p>
 <p>So, instead, I'm going to use the YAML format to write the information about my podcast, and use a GitHub Actions to generate the feed.</p>
 <hr>
-<h1 id="marketplace-actions" tabindex="-1">Marketplace Actions</h1>
+<h1 id="building-actions" tabindex="-1">Building Actions</h1>
 <ul>
 <li><a href="https://pages.github.com/">GitHub Pages</a></li>
 <li>Python</li>
@@ -173,6 +190,7 @@
 <p>To parse the YAML into XML, we're going to be using python. Python is a great language for processing data. It's super fast, easy to use and has a ton of libraries that can help you with your needs. I'm assuming you have python installed on your machine. It you need help doing that, check out this course.</p>
 <p>Because we're going to be publishing this in the marketplace, we're going to need to write out a Dockerfile. GitHub Actions can use this to build a container that will run our action. Think of a container as a virtual machine that's running in the cloud.</p>
 <p>We're also going to need to run some bash scripts to run our python file and also to make sure that our changes are pushed back to GitHub.</p>
+<hr>
 <h1 id="the-code" tabindex="-1">The Code</h1>
 <ul>
 <li><a href="https://github.com/LinkedInLearning/github-practical-actions-4412872">Repo Files</a></li>
@@ -206,7 +224,7 @@
                     <li><a href="#what-we're-doing">What We're Doing</a>
             		</li>
 
-                    <li><a href="#marketplace-actions">Marketplace Actions</a>
+                    <li><a href="#building-actions">Building Actions</a>
             		</li>
 
                     <li><a href="#the-code">The Code</a>
